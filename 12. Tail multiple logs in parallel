@@ -1,0 +1,2 @@
+#!/bin/bash
+multitail /var/log/syslog /var/log/nginx/error.log
