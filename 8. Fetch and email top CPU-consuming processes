@@ -1,0 +1,2 @@
+#!/bin/bash
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head -10 | mail -s "Top CPU Consumers" you@example.com
