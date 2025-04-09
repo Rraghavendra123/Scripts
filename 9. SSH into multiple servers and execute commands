@@ -1,0 +1,4 @@
+#!/bin/bash
+while read server; do
+  ssh user@$server 'uptime && df -h'
+done < servers.txt
