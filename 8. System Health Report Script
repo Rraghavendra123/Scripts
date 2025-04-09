@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "System Health Report - $(date)"
+echo "-------------------------------"
+uptime
+df -h /
+free -m
+top -b -n1 | head -n 5
