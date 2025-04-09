@@ -1,0 +1,3 @@
+#!/bin/bash
+LOG_DIR="/var/log/myapp"
+aws s3 cp $LOG_DIR s3://your-bucket/logs/ --recursive
