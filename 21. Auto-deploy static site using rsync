@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -avz --delete /local/site/ user@remote:/var/www/html/
