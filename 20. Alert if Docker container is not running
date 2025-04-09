@@ -1,0 +1,5 @@
+#!/bin/bash
+CONTAINER="my_container"
+if ! docker ps --format '{{.Names}}' | grep -q "^$CONTAINER$"; then
+  echo "ALERT: Docker container $CONTAINER is not running!"
+fi
