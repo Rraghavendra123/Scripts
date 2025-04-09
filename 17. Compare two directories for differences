@@ -1,0 +1,2 @@
+#!/bin/bash
+diff -rq /path/to/dir1 /path/to/dir2
