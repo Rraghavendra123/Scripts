@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "[webservers]" > inventory.ini
+for ip in $(cat servers.txt); do
+  echo "$ip" >> inventory.ini
+done
