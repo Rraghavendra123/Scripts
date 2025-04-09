@@ -1,0 +1,6 @@
+#!/bin/bash
+grep -Eo '([0-9]{1,3}\.){3}[0-9]{1,3}' ips.txt | while read ip; do
+  if [[ $ip =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]]; then
+    echo "$ip is valid"
+  fi
+done
