@@ -1,0 +1,6 @@
+#!/bin/bash
+JOB_URL="http://jenkins.local/job/myjob/lastBuild/api/json"
+STATUS=$(curl -s $JOB_URL | jq -r '.result')
+if [[ "$STATUS" != "SUCCESS" ]]; then
+  echo "ALERT: Jenkins job failed!"
+fi
